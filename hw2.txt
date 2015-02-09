@@ -1,1 +1,1 @@
-https://hangperson-xinran.herokuapp.com
+hangperson-xinran.herokuapp.com
