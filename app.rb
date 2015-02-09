@@ -44,9 +44,8 @@ class HangpersonApp < Sinatra::Base
   post '/guess' do
     letter = params[:guess].to_s[0]
     ### YOUR CODE HERE ###
-    lower_case_letter = letter.downcase
     begin
-      if @game.guess(lower_case_letter) == true
+      if @game.guess(letter) == true
         redirect '/show'
       else
         flash[:message] = "You have already used that letter."
