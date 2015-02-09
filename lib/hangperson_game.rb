@@ -22,6 +22,8 @@ class HangpersonGame
       raise ArgumentError.new("No Non-Letter character is allowed")
     end
 
+    character = character.downcase
+
     if @word.include? character
       if @guesses.include? character
         return false
